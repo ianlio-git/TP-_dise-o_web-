@@ -1,0 +1,11 @@
+.section {
+  min-height: 100vh;
+  padding-top: 120px;
+  padding-bottom: 2rem;
+  display: flex;
+}
+
+.section-title {
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+}
