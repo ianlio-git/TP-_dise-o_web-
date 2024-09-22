@@ -16,11 +16,11 @@
         <nav class="navbar navbar-expand-lg navbar-dark">
           <a class="navbar-brand" href="index.html">
             <img
-              src="logo.png"
+              src="./img/logo.jpeg"
               alt="Logo"
               width="30"
               height="30"
-              class="d-inline-block align-top"
+              class="d-inline-block align-top rounded-circle"
             />
             Servicios Profesionales
           </a>
@@ -98,12 +98,11 @@
           year: "2° año",
         },
         {
-          name: "Alejandro Valente",
-          img: "./img/Alejandro.jpeg",
-          portfolioLink: "https://alvalenteuade.github.io/Portfolio/",
-          figmaLink: 
-            "https://www.figma.com/design/Xw4lvQD2rdk3UK5BDvTEIw/Portfolio?node-id=0-1&m=dev&t=svH8nAYDW6rpG8EW-1",
-          career: "Licenciatura de Sistemas",
+          name: "Nombre 2",
+          img: "member2.jpg",
+          portfolioLink: "#",
+          figmaLink: "https://www.figma.com/file/prototype2",
+          career: "Nombre de Carrera",
           year: "2° año",
         },
         {
@@ -157,18 +156,6 @@
             </div>
           `;
         teamContainer.insertAdjacentHTML("beforeend", cardHTML);
-      });
-
-      function closeNavbar() {
-        const navbarCollapse = document.getElementById("navbarNav");
-        if (navbarCollapse.classList.contains("show")) {
-          navbarCollapse.classList.remove("show");
-        }
-      }
-
-      // Si deseas que el menú se cierre al hacer clic en un enlace
-      document.querySelectorAll(".nav-link").forEach((link) => {
-        link.addEventListener("click", closeNavbar);
       });
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
