@@ -134,7 +134,7 @@
         {
           name: "Emir Sein",
           img: "./img/emir.sein1.jpg",
-          portfolioLink: "https://emirsein1.github.io/Portfolio/index.html",
+          portfolioLink: "https://github.com/emirsein1/Portfolio.git",
           figmaLink:
             "https://www.figma.com/design/Iy98A9xMElwfPgSdw91lXK/Portfolio?node-id=1-6&t=L1FCbEw4syH8N69L-1",
           career: "Licenciatura de Sistemas",
@@ -143,11 +143,11 @@
         {
           name: "Rosario Bonata",
           img: "./img/rosario bonata.jpg",
-          portfolioLink: "https://rosariobonata.github.io/uva2-portfolio-personal/",
+          portfolioLink: "#",
           figmaLink:
             "https://www.figma.com/design/Y72UIAFPVJOJVy9phrpHlN/PROTO1?node-id=0-1&t=RTToY5aDMiW0tuov-1 ",
-          career: "Licenciatura de Sistemas",
-          year: "1° año",
+          career: "LIc en sistemas",
+          year: "2° año",
         },
       ];
 
@@ -155,26 +155,27 @@
 
       teamMembers.forEach((member) => {
         const cardHTML = `
-            <div class="col-md-4 mb-4">
-              <div class="card shadow border-0 rounded overflow-hidden" style="background-color: #f0f0f0;">
-                <div class="d-flex justify-content-center mt-3">
-                  <a href="${member.portfolioLink}" target="_blank" style="text-decoration: none;">
-                    <img src="${member.img}" class="rounded-circle" alt="${member.name}" style="width: 150px; height: 150px; object-fit: cover;"/>
-                  </a>
-                </div>
-                <div class="card-body text-center">
-                  <h5 class="card-title" style="color: #343a40;">${member.name}</h5>
-                  <p style="color: #6c757d;">${member.career}, ${member.year}</p>
-                  <div class="d-flex justify-content-center mt-2">
-                    <a href="${member.figmaLink}" target="_blank" class="btn btn-secondary" style="background-color: #6c757d; border-color: #6c757d;">
-                      <img src="./img/figmalogo.png" alt="Figma Logo" class="me-1 rounded" width="25" />
-                      Prototipo Figma
-                    </a>
-                  </div>
-                </div>
+        <div class="col-md-4 mb-4">
+          <div class="card shadow border-0 rounded overflow-hidden" style="background-color: #f0f0f0;">
+            <div class="d-flex justify-content-center mt-3">
+              <img src="${member.img}" class="rounded-circle" alt="${member.name}" style="width: 150px; height: 150px; object-fit: cover;" />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title" style="color: #343a40;">${member.name}</h5>
+              <p style="color: #6c757d;">${member.career}, ${member.year}</p>
+              <div class="d-flex flex-column justify-content-center mt-2">
+                <a href="${member.portfolioLink}" target="_blank" class="btn btn-primary mb-2" style="background-color: #6c757d; border-color: #6c757d;">
+                  Ir al Portfolio
+                </a>
+                <a href="${member.figmaLink}" target="_blank" class="btn btn-secondary" style="background-color: #6c757d; border-color: #6c757d;">
+                  <img src="./img/figmalogo.png" alt="Figma Logo" class="me-1 rounded" width="25" />
+                  Prototipo Figma
+                </a>
               </div>
             </div>
-          `;
+          </div>
+        </div>
+      `;
         teamContainer.insertAdjacentHTML("beforeend", cardHTML);
       });
     </script>
