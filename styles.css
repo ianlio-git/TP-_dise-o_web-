@@ -1,3 +1,11 @@
+/* colores para la parte de servicios */
+:root {
+  --celeste: rgb(208, 226, 222);
+  --gris: #efefefe3;
+}
+
+/**/
+
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -11,4 +19,82 @@ body {
 .section-title {
   margin-bottom: 1rem;
   font-size: 2.5rem;
+}
+
+/* Pestaña de "SERVICIOS" */
+.tituloservicios {
+  text-align: center;
+}
+
+.presentacionservicios {
+  background-color: var(--celeste);
+  padding: 2%;
+  text-align: center;
+}
+
+.disposervicios {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas de igual tamaño */
+  gap: 2%;
+  padding: 2%;
+  text-align: justify;
+  border-style: dashed;
+  border: 25%;
+  border-color: var(--gris);
+  border-top: none;
+}
+
+.nombreserv {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.margentop {
+  margin-top: 6%;
+}
+
+.fondoporservicio {
+  background-color: var(--gris);
+  padding: 2%;
+}
+
+.dispofrases {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 5%;
+  padding: 2%;
+  text-align: center;
+  border-style: dashed;
+  border: 25%;
+  border-color: var(--gris);
+  border-top: none;
+}
+
+.fondofrases {
+  background-color: var(--celeste);
+  padding: 3%;
+}
+
+/* responsive para celular */
+
+@media (max-width: 768px) {
+  .disposervicios {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .fondoporservicio {
+    width: 100%;
+  }
+  .fondoporservicio img {
+    width: 100%;
+  }
+  .dispofrases {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .section-title {
+    font-size: 2rem;
+  }
 }
