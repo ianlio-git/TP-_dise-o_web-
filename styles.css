@@ -1,4 +1,4 @@
-/* colores para la parte de servicios */
+
 :root {
   --celeste: rgb(208, 226, 222);
   --gris: #efefefe3;
@@ -21,7 +21,7 @@ body {
   font-size: 2.5rem;
 }
 
-/* Pestaña de "SERVICIOS" */
+
 .tituloservicios {
   text-align: center;
 }
@@ -34,7 +34,7 @@ body {
 
 .disposervicios {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columnas de igual tamaño */
+  grid-template-columns: repeat(3, 1fr); 
   gap: 2%;
   padding: 2%;
   text-align: justify;
@@ -75,7 +75,19 @@ body {
   padding: 3%;
 }
 
-/* responsive para celular */
+.formulario-container {
+  background-color: var(--gris);
+  padding: 20px; 
+  border-radius: 8px; 
+}
+.form-label {
+  text-align: right; 
+}
+
+a {
+  text-decoration: none;
+  margin-left: 15px;
+}
 
 @media (max-width: 768px) {
   .disposervicios {
@@ -98,3 +110,4 @@ body {
     font-size: 2rem;
   }
 }
+
