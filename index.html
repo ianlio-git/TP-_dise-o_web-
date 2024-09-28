@@ -12,7 +12,29 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .shadow-custom {
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+      }
+
+      .shadow-custom:hover {
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        transform: translateY(-2px);
+      }
+
+      .btn-custom {
+        background-color: #212529;
+        color: #ffffff;
+        border-radius: 5px;
+        border: none;
+      }
+
+      .btn-custom:hover {
+        background-color: #1c1e22;
+        color: #ffffff;
+      }
+    </style>
   </head>
   <body class="d-flex flex-column min-vh-100">
     <header class="bg-dark text-white fixed-top py-3">
@@ -62,39 +84,54 @@
       </div>
     </header>
 
-    <main class="container my-5 flex-grow-1">
-      <section id="inicio" class="section">
-        <div>
-          <h1 class="text-center mb-4">
+    <main class="container my-5 flex-grow-1 d-flex align-items-center pt-5">
+      <section id="inicio" class="section text-center flex-grow-1">
+        <div class="w-100">
+          <h1 style="margin-bottom: 100px">
             ¡Bienvenidos a Servicios Profesionales!
           </h1>
-          <div class="row align-items-center">
+          <!-- Aumenta el margen inferior -->
+          <div class="row align-items-center justify-content-center">
             <div class="col-md-6 text-center">
               <img
                 src="./img/imagen-inicio.jpeg"
                 alt="Nuestro equipo"
                 class="img-fluid rounded-circle mb-4"
-                style="width: 300px; height: 300px"
+                style="width: 450px; height: 450px"
               />
             </div>
             <div class="col-md-6">
               <h2>¿Quiénes somos?</h2>
               <p>
-                Somos un grupo de estudiantes de la UADE, apasionados por
-                ofrecer soluciones creativas y prácticas para distintos
-                desafíos.
+                Bienvenidos a Servicios Profesionales, un equipo de estudiantes
+                de la UADE comprometidos con la excelencia. Nos especializamos
+                en ofrecer soluciones personalizadas en consultoría de gestión
+                de servicios, soporte y mantenimiento de aplicaciones, y
+                desarrollo de software a medida.
               </p>
               <p>
-                Estamos aquí para aprender y ayudar, así que explora nuestro
-                sitio para descubrir cómo podemos colaborar y apoyarte en tus
-                proyectos.
+                Nuestro enfoque se basa en las mejores prácticas
+                internacionales, como ITIL y Agile, para brindar un servicio de
+                alta calidad. Nos dedicamos a optimizar procesos y transformar
+                la experiencia digital de nuestros clientes.
               </p>
+              <p>
+                ¡Explora nuestro sitio para descubrir cómo podemos colaborar y
+                contribuir al éxito de tus proyectos!
+              </p>
+              <div class="text-center mt-4">
+                <a
+                  href="contacto.html"
+                  class="btn btn-custom shadow-custom btn-lg"
+                >
+                  Contáctanos
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </section>
     </main>
-
 
     <footer class="bg-light text-dark py-4 mt-auto">
       <div class="container">
