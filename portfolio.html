@@ -63,13 +63,102 @@
     </header>
 
     <main class="container my-5 flex-grow-1">
-      <section id="portafolio" class="section">
-        <div>
-          <h1 class="section-title">Nuestro Portfolio</h1>
-          <p>
-            Esta página está en desarrollo. Pronto encontrarás ejemplos de
-            nuestros proyectos y trabajos realizados.
+      <section id="portafolio" class="section portfolio-section">
+        <h1 class="text-center mb-4">Portafolio</h1>
+
+        <div
+          class="bg-light p-4 rounded mb-5"
+          style="max-width: 90%; margin: 0 auto"
+        >
+          <p class="text-center mb-0">
+            En esta sección encontrarás nuestros proyectos, mostrando nuestras
+            capacidades en desarrollo de software. Actualmente, presentamos
+            nuestro proyecto principal: esta plataforma de servicios de
+            software.
           </p>
+        </div>
+
+        <div class="row row-cols-1 row-cols-lg-2 g-4 mb-5">
+          <div class="col">
+            <div class="card h-100 border-0 bg-light">
+              <div
+                class="card-img-top d-flex align-items-center justify-content-center"
+                style="height: 250px; overflow: hidden; padding: 20px"
+              >
+                <img
+                  src="./img/home.png"
+                  class="img-fluid"
+                  alt="Servicios Profesionales"
+                  style="object-fit: cover"
+                />
+              </div>
+              <div class="card-body d-flex flex-column" style="padding: 2.5rem">
+                <h5 class="card-title">Servicios Profesionales</h5>
+                <p class="card-text flex-grow-1">
+                  Sitio web que describe nuestra empresa.
+                </p>
+                <div>
+                  <a href="index.html" class="btn btn-secondary btn-sm"
+                    >Ver proyecto</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 border-0 bg-light">
+              <div
+                class="card-img-top d-flex align-items-center justify-content-center"
+                style="height: 250px; overflow: hidden; padding: 20px"
+              >
+                <img
+                  src="./img/underConstruction.png"
+                  class="img-fluid"
+                  alt="Sitio en construcción"
+                  style="object-fit: contain"
+                />
+              </div>
+              <div class="card-body d-flex flex-column" style="padding: 2.5rem">
+                <h5 class="card-title">Servicios Profesionales</h5>
+                <p class="card-text flex-grow-1">Sitio web en construcción.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="bg-light p-4 rounded tecnologias-container"
+          style="max-width: 90%; margin: 0 auto"
+        >
+          <h2 class="text-center mb-4">Tecnologías</h2>
+          <div
+            class="row row-cols-2 row-cols-md-4 g-4 g-md-5 justify-content-center align-items-center"
+          >
+            <div class="col text-center">
+              <img
+                src="./img/html5.png"
+                alt="HTML5"
+                class="img-fluid tech-icon"
+              />
+            </div>
+            <div class="col text-center">
+              <img src="./img/css.png" alt="CSS3" class="img-fluid tech-icon" />
+            </div>
+            <div class="col text-center">
+              <img
+                src="./img/js.png"
+                alt="JavaScript"
+                class="img-fluid tech-icon"
+              />
+            </div>
+            <div class="col text-center">
+              <img
+                src="./img/bootstrap.png"
+                alt="Bootstrap"
+                class="img-fluid tech-icon"
+              />
+            </div>
+          </div>
         </div>
       </section>
     </main>
