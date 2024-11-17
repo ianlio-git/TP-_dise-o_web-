@@ -211,3 +211,7 @@ width: auto;
 height: auto;
   }
 }
+
+.botones {
+  display: flex;
+}
